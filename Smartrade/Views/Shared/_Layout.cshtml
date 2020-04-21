@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Smartrade</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <style>
+        
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 mt-1">
+                <a class="btn bg-white btn-sm" asp-action="Signin" asp-controller="Home"> Sign In </a>
+                <a class="btn btn-primary text-light animated pulse px-3" asp-action="Register" asp-controller="Home">Register </a>
+            </div>
+
+            <div class="col-lg-8">
+                <ul class="navbar navbar-expand-lg d-flex justify-content-lg-end mt-1 mb-0 pb-0">
+                    <li class="nav-item active nl">
+                        <a class="nav-link text-dark" href="#">Pricing <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item nl">
+                        <a class="nav-link text-dark" href="#">Account Types</a>
+                    </li>
+                    <li class="nav-item nl">
+                        <a class="nav-link text-dark" href="#">Funding & Transfers </a>
+                    </li>
+                    <li class="nav-item nl">
+                        <a class="nav-link font-weight-bold sb" asp-action="OpenAccount" asp-controller="Home">Open New Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark mt-lg-0 pt-0" style="margin-top: -20px;">
+            <a class="navbar-brand" href="#"><img src="~/Images/OTA_Logo_RGB-600.png" width="200" /></a>
+            <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-0 pt-0" id="navbarNav">
+                <ul class="navbar-nav ml-auto font-weight-bold xp">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Home <span class="sr-only">Why Smartrade?</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Tools & Platforms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Investment Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Guidance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Research</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <hr class="hr mt-0" />
+    </div>
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background-color: #F7F7F7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a class="navbar-brand" href="#"><img src="~/Images/OTA_Logo_RGB-600.png" width="200" /></a>
+                </div>
+                <div class="col-lg-7 text-center">
+                    <p class="lead font-weight-bold">
+                        Where Smart Investors Get Smarter
+                    </p>
+                </div>
+
+                <div class="col-lg-3 d-inline-flex">
+                    <p class="lead mr-2"> Call Us : 08023125989</p>
+                    <p class="text-black-50 lead mr-2"><i class="fab fa-twitter"></i></p>
+                    <p class="text-black-50 lead mr-2"><i class="fab fa-facebook-f"></i></p>
+                    <p class="text-black-50 lead mr-2"><i class="fab fa-youtube"></i></p>
+                </div>
+            </div>
+
+            <hr  class="hr"/>
+
+            <div class="row mt-5">
+                <div class="col text-left">
+                    <h6 class="mb-2">
+                        Quick Links
+                    </h6>
+                    <hr class="hr" />
+                    <div>
+                        <a asp-action="Login" asp-controller="Home">Client Log in </a><br />
+                        <hr class="hr" />
+                        <a asp-action="OpenAccount" asp-controller="Home">Open New Account </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Smartrade" asp-controller="Home">Why Smartrade </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Pricing" asp-controller="Home">Pricing </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Accounts" asp-controller="Home">Account Types</a><br />
+                        <hr class="hr" />
+                        <a c asp-action="AbountUs" asp-controller="Home">About Us </a><br />
+                        <hr class="hr" />
+
+                    </div>
+                </div>
+                <div class="col text-left">
+                    <h6 class="mb-2">
+                        Invest
+                    </h6>
+                    <hr class="hr" />
+                    <div>
+                        <a asp-action="Login" asp-controller="Home">Investment Guidance </a><br />
+                        <hr class="hr" />
+                        <a asp-action="OpenAccount" asp-controller="Home">Retirement Planning </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Smartrade" asp-controller="Home">Roll Over IRA </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Pricing" asp-controller="Home">Portfolio Management</a><br />
+                        <hr class="hr" />
+                        <a asp-action="Accounts" asp-controller="Home">Stock Analysis </a><br />
+                        <hr class="hr" />
+
+
+                    </div>
+                </div>
+                <div class="col text-left">
+                    <h6 class="mb-2">
+                        Trade
+                    </h6>
+                    <hr class="hr" />
+                    <div>
+                        <a asp-action="Login" asp-controller="Home">Tools & Platfrom </a><br />
+                        <hr class="hr" />
+                        <a asp-action="OpenAccount" asp-controller="Home">Web Platform </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Smartrade" asp-controller="Home">Mobile Trading </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Pricing" asp-controller="Home">Options</a><br />
+                        <hr class="hr" />
+                        <a asp-action="Accounts" asp-controller="Home">Bonds</a><br />
+                        <hr class="hr" />
+                        <a asp-action="AbountUs" asp-controller="Home">Treasury Bills </a><br />
+                        <hr class="hr" />
+
+                    </div>
+                </div>
+
+                <div class="col text-left">
+                    <h6 class="mb-2">
+                        Service
+                    </h6>
+                    <hr class="hr" />
+                    <div>
+                        <a asp-action="Login" asp-controller="Home">Contact Us </a><br />
+                        <hr class="hr" />
+                        <a asp-action="OpenAccount" asp-controller="Home">Find a Branch</a><br />
+                        <hr class="hr" />
+                        <a asp-action="Smartrade" asp-controller="Home">Funding & Transfer </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Pricing" asp-controller="Home">FAQs</a><br />
+                        <hr class="hr" />
+                        <a asp-action="Accounts" asp-controller="Home">Form Library</a><br />
+                        <hr class="hr" />
+                        <a asp-action="AbountUs" asp-controller="Home">Feedback</a><br />
+                        <hr class="hr" />
+
+                    </div>
+
+                </div>
+
+                <div class="col text-left">
+                    <h6 class="mb-2">
+                        Language
+                    </h6>
+                    <hr class="hr" />
+                    <div>
+                        <a asp-action="Login" asp-controller="Home">English</a><br />
+                        <hr class="hr" />
+                        <a asp-action="OpenAccount" asp-controller="Home">Igbo</a><br />
+                        <hr class="hr" />
+                        <a asp-action="Smartrade" asp-controller="Home">Hausa </a><br />
+                        <hr class="hr" />
+                        <a asp-action="Pricing" asp-controller="Home">Yoruba</a><br />
+                        <hr class="hr" />
+                        
+
+                    </div>
+
+                </div>
+            </div>
+              
+            &copy; 2020 - Smartrade - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,223 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+    .jumbotron {
+        background-image: url("/Images/jason-briscoe-Gw_sFen8VhU-unsplash.jpg");
+        background-size: cover;
+        min-height: 600px;
+        background-position: right top;
+        width: 100%;
+    }
+
+    #img1 {
+        background-image: url("/Images/Invertir-Bolsa-De-Valores-Con-Mil-Pesos-Y-Un-Celular.png");
+        background-size: cover;
+        min-height: 400px;
+        background-position: right top;
+        width: 100%;
+    }
+
+    #img2 {
+        background-image: url("Images/17393-ideas-education-123rf.jpg");
+        background-size: cover;
+        min-height: 400px;
+        background-position: right top;
+        width: 100%;
+    }
+
+    #img3 {
+        background-image: url("Images/Online-education1.jpg");
+        background-size: cover;
+        min-height: 400px;
+        background-position: right top;
+        width: 100%;
+    }
+
+    h4 {
+        color: #00007C;
+    }
+</style>
+
+<div class="row mt-4 bg-primary text-white rounded">
+    <div class="col-lg-8 p-3">
+        <p class="h4 pt-2 font-weight-bold">Supporting your investing needs – no matter what</p>
+        <p>
+            We've put together some helpful resources to make it quick and easy to self-service on our website and mobile apps.
+            If you need to reach us by phone, please understand your wait may be longer
+            than normal due to increased market volatility related to COVID-19.
+        </p>
+    </div>
+    <div class="col-lg-4 p-3">
+        <p class="h4 pt-2 font-weight-bold">Helpful resources</p>
+        <ul class="">
+            <li><a href="www.google.com">Answers to your top questions</a></li>
+            <li><a>A letter from our CEO</a></li>
+            <li><a>Today's insights on market volatility</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="jumbotron mt-3">
+    <h1 class="pt-3">
+        Don't just watch the<br />
+        news, use it
+    </h1>
+    <p class="lead text-white pt-3">
+        Full of interactive programming from industry pros, <br />
+        Molten Trust Limited doesn't just bring you what's<br />
+        happening in the market, but shows how it could apply<br />
+        to your strategies.
+    </p>
+    <hr class="my-5">
+
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
+
+
+<div class="row mt-5 p-5 text-left">
+
+    <div class="col-lg-7" id="img2">
+
+    </div>
+    <div class="col-lg-5 py-lg-5">
+        <h2 class="h2 font-weight-bold">
+            When the market swings, learn how to swing back
+        </h2>
+        <p class="lead">Get expert insights to help navigate the ups and downs of the market with confidence.</p>
+
+        <a class="btn btn-lg text-white m-2" asp-action="learn" asp-controller="Home">Learn More</a>
+
+    </div>
+</div>
+
+
+<div class="row mt-5 p-5 text-left">
+    <div class="col-lg-5 py-lg-5">
+        <h2 class="h2 font-weight-bold">
+            Take on the market with our powerful platforms
+        </h2>
+        <p class="lead">
+            Trade without trade-offs. Our desktop, web,
+            and mobile platforms are designed for performance and built for all levels of investors.
+        </p>
+
+        <a class="btn btn-lg text-white m-2" asp-action="learn" asp-controller="Home">Learn More</a>
+
+    </div>
+    <div class="col-lg-7" id="img1">
+
+    </div>
+
+    <div class="row mt-5 p-5 text-left">
+
+        <div class="col-lg-7" id="img3">
+
+        </div>
+        <div class="col-lg-5 py-lg-5">
+            <h2 class="h2 font-weight-bold">
+                Personalized education just for you
+            </h2>
+            <p class="lead">
+                There's no ROI on TMI. That's why we created a learning experience that customizes to give you exactly the information
+                you need, and none of the information you don't..
+            </p>
+
+            <a class="btn btn-lg text-white m-2" asp-action="learn" asp-controller="Home">Learn More</a>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col text-center">
+        <h1 class=" h1 font-weight-bold text-dark">Why Choose Molten Smartrade?</h1>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/icons8-new-product-100.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Products</h4>
+        <p class="lead" style="font-size: 16px">Wide selection of investment choices</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/edu.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Education</h4>
+        <p class="lead" style="font-size: 16px">Interative courses and Webcasts</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/tools.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Tools</h4>
+        <p class="lead" style="font-size: 16px">Free, powerful trading <br />platform</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/pricing.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Pricing</h4>
+        <p class="lead" style="font-size: 16px">Commission-free online<br /> trading</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/research.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Research</h4>
+        <p class="lead" style="font-size: 16px">Objective, third-party<br /> research</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/icons8-new-product-100.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Trust</h4>
+        <p class="lead" style="font-size: 16px">Trusted by over 250,000<br /> clients</p>
+    </div>
+    <div class="col-lg-3 col-sm-6 text-center">
+        <img src="~/Images/supports.png" style="width: 60%" />
+        <h4 class="mt-4 wm">Supports</h4>
+        <p class="lead" style="font-size: 16px">Dependable professional service</p>
+    </div>
+</div>
+
+
+
+<div class="row mt-5 text-center mb-5">
+
+    <div class="col mb-5"><a class="btn text-white p-3" asp-action="OpenAccount" asp-controller="Home">Open new account</a></div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+<br />
